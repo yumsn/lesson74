@@ -88,6 +88,9 @@ header .contact {
   display: inline-block;
   margin-left: auto;
 }
+header .contact:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 @media (max-width: 900px) {
   header .contact {
     display: none;
@@ -99,7 +102,8 @@ header .contact {
 }
 .mainvisual img {
   height: calc(100vh - 80px);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news_list {
@@ -296,7 +300,8 @@ header .contact {
 }
 .company_wrap .company_pic img {
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {

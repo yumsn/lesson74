@@ -101,6 +101,9 @@ header {
     background-color: black;
     display: inline-block;
     margin-left: auto;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
     @include mq {
       display: none;
     }
