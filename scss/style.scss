@@ -17,7 +17,7 @@ img {
 }
 
 //ヘッダーとフッターのロゴ
-.logo {
+.site_logo {
   width: 100px;
   line-height: 1;
 }
@@ -35,13 +35,13 @@ img {
   span {
     display: block;
   }
-  .en {
+  .english_sec_title {
     font-size: 36px;
     line-height: 54px;
     margin-bottom: 10px;
     letter-spacing: 8px;
   }
-  .ja {
+  .japanese_sec_title {
     font-size: $text-font-size;
     margin-bottom: 36px;
   }
@@ -72,7 +72,7 @@ header {
     }
   }
 
-  .logo {
+  .site_logo {
     width: 100px;
     line-height: 1px;
     margin-right: 60px;
@@ -81,10 +81,11 @@ header {
     }
   }
 
-  nav {
+   .header_nav {
     display: flex;
     align-items: center;
-    ul {
+    
+    &_list {
       display: flex;
     }
     li + li {
@@ -92,7 +93,7 @@ header {
     }
   }
 
-  .contact {
+  .header_contact {
     width: 200px;
     height: $header-hight;
     line-height: $header-hight;
@@ -194,14 +195,14 @@ header {
     padding: 0;
     flex-direction: column;
   }
-  .left {
+  .business_wrap_left {
     margin-top: 100px;
     @include mq {
       margin: 0;
     }
   }
-  .left,
-  .right {
+  .business_wrap_left,
+  .business_wrap_right {
     width: calc((100% - 64px) / 2);
     @include mq {
       width: 100%;
@@ -236,7 +237,7 @@ header {
     position: static;
     flex-direction: column;
   }
-  .text {
+  .company_wrap_text {
     width: 55%;
     background-color: white;
     padding: 100px 0 100px 62px;
@@ -246,7 +247,7 @@ header {
     }
   }
 
-  .info {
+  .company_info {
     font-size: $text-font-size;
     display: flex;
     flex-wrap: wrap;
@@ -279,7 +280,7 @@ header {
     }
   }
 
-  .company_pic {
+  .company_wrap_pic {
     width: 53%;
     position: absolute;
     top: 115px;
@@ -312,7 +313,7 @@ header {
       align-items: normal;
     }
   }
-  .logo {
+  .site_logo {
     @include mq {
       margin-bottom: 10px;
     }
@@ -320,7 +321,7 @@ header {
 
   //こっちの方が良い？
   // @include mq {
-  //   .logo {
+  //   .site_logo {
   //     margin-bottom: 10px;
   //   }
   // }
