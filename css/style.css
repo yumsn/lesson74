@@ -102,8 +102,7 @@ header .contact:hover {
 }
 .mainvisual img {
   height: calc(100vh - 80px);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .news_list {
@@ -300,8 +299,7 @@ header .contact:hover {
 }
 .company_wrap .company_pic img {
   height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .footer {
