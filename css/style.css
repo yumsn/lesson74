@@ -185,6 +185,13 @@ header .header_contact:hover {
   }
 }
 
+@media (max-width: 1024px) {
+  .about_wrap .about_text {
+    width: 45%;
+    font-size: 0.875rem;
+    padding: 180px 16px 0 5%;
+  }
+}
 .business_wrap {
   padding: 0 100px 0;
   margin-bottom: 70px;
