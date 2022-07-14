@@ -1,5 +1,7 @@
 body {
   background-color: #F0F0F0;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
 }
 
 img {
