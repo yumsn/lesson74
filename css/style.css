@@ -67,6 +67,7 @@ header .site_logo {
 }
 @media (max-width: 900px) {
   header .site_logo {
+    width: 80px;
     margin-bottom: 7px;
   }
 }
@@ -77,8 +78,18 @@ header .header_nav {
 header .header_nav_list {
   display: flex;
 }
+@media (max-width: 900px) {
+  header .header_nav_list {
+    font-size: 0.8rem;
+  }
+}
 header .header_nav li + li {
   margin-left: 30px;
+}
+@media (max-width: 900px) {
+  header .header_nav li + li {
+    margin-left: 15px;
+  }
 }
 header .header_contact {
   width: 200px;

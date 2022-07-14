@@ -79,6 +79,7 @@ header {
     line-height: 1px;
     margin-right: 60px;
     @include mq {
+      width: 80px;
       margin-bottom: 7px;
     }
   }
@@ -89,9 +90,15 @@ header {
     
     &_list {
       display: flex;
+      @include mq {
+        font-size: 0.8rem;
+      }
     }
     li + li {
       margin-left: 30px;
+      @include mq {
+        margin-left: 15px;
+      }
     }
   }
 
