@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Site</title>
 </head>
 <body>
   <header class="header">
@@ -29,7 +31,12 @@
   <main>
 
     <div class="mainvisual">
-      <img src="img/mainvisual.jpg" alt="メインビジュアル">
+      <div class="slider">
+        <div><img src="img/mainvisual.jpg" alt="スライド"></div>
+        <div><img src="img/mainvisual02.jpg" alt="スライド"></div>
+        <div><img src="img/mainvisual03.jpg" alt="スライド"></div>
+
+      </div>
     </div>
 
     <section id="news" class="container">
@@ -151,7 +158,24 @@
       </div>
       <p>&copy;Web Entertainment Design Inc.</p>
     </div>
-  </footer>  
+  </footer>
+  
+  //jQuery
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  //slick JS
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    //   $('.your-class').slick({
+    //   setting-name: setting-value  //option追加する場合は必要
+    //   });
+      $('.slider').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true
+      });
+    });
+  </script>
 </body>
 </html>
 

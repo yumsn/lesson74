@@ -345,4 +345,17 @@ header .header_contact:hover {
   }
 }
 
+.slider {
+  visibility: hidden;
+}
+
+.slider.slick-initialized {
+  visibility: visible;
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 20;
+}
+
 /*# sourceMappingURL=style.css.map */

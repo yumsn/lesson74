@@ -336,10 +336,25 @@ header {
     }
   }
 
-  //こっちの方が良い？
-  // @include mq {
-  //   .site_logo {
-  //     margin-bottom: 10px;
-  //   }
-  // }
 }
+
+//一瞬スライダーが縦並びになる現象の解決策
+.slider {
+  visibility: hidden;
+}
+.slider.slick-initialized {
+  visibility: visible;
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 20;
+}
+
+// .slick-next {
+//   right: 10px;
+// }
+
+// .slick-prev {
+//   left: 10px
+// }
